@@ -13,15 +13,15 @@ export default function Projects() {
     : projects.filter(p => p.type === filter);
 
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-semibold mb-12">Projects</h1>
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
+      <h1 className="text-3xl sm:text-4xl font-semibold mb-8 sm:mb-12">Projects</h1>
       
-      <div className="mb-8">
-        <p className="text-base text-black/70 mb-4 max-w-2xl">
+      <div className="mb-6 sm:mb-8">
+        <p className="text-sm sm:text-base text-black/70 mb-4 max-w-2xl">
           A selection of projects I've built or contributed to. Each represents 
           work at the intersection of healthcare, technology, and clinical practice.
         </p>
-        <div className="flex gap-2 text-xs font-mono">
+        <div className="flex flex-wrap gap-2 text-xs font-mono">
           <button
             onClick={() => setFilter('all')}
             className={`px-3 py-1 border border-black transition-all ${

@@ -75,11 +75,11 @@ export default function GitHubHeatmap() {
   };
 
   return (
-    <div className="border-t border-black pt-8 mt-8">
-      <div className="flex items-center justify-between mb-4">
-        <h2 className="text-xl font-semibold">GitHub Contributions</h2>
+    <div className="border-t border-black pt-6 sm:pt-8 mt-6 sm:mt-8">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0 mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold">GitHub Contributions</h2>
         {total > 0 && (
-          <p className="text-sm font-mono text-black/60">
+          <p className="text-xs sm:text-sm font-mono text-black/60">
             {total.toLocaleString()} contributions in the last year
           </p>
         )}

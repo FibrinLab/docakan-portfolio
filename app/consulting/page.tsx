@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export default function Consulting() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-semibold mb-12">Consulting</h1>
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
+      <h1 className="text-3xl sm:text-4xl font-semibold mb-8 sm:mb-12">Consulting</h1>
       
-      <div className="space-y-8 text-lg leading-relaxed max-w-2xl">
+      <div className="space-y-6 sm:space-y-8 text-base sm:text-lg leading-relaxed max-w-2xl">
         <section>
-          <h2 className="text-2xl font-semibold mb-4">What I Help With</h2>
+          <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">What I Help With</h2>
           <p className="mb-4">
             I provide strategic and technical guidance to healthcare organizations, 
             technology companies, and educational institutions. My work centers on 
@@ -22,7 +22,7 @@ export default function Consulting() {
         </section>
         
         <section>
-          <h2 className="text-2xl font-semibold mb-4">Who This Is For</h2>
+          <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">Who This Is For</h2>
           <p className="mb-4">
             Healthcare systems and hospitals looking to implement new technologies 
             or improve existing processes. Digital health startups needing clinical 
@@ -33,7 +33,7 @@ export default function Consulting() {
         </section>
         
         <section>
-          <h2 className="text-2xl font-semibold mb-4">How I Work</h2>
+          <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">How I Work</h2>
           <p className="mb-4">
             I start by understanding your specific context: your organization's 
             constraints, technical capabilities, and clinical workflows. From there, 
@@ -49,7 +49,7 @@ export default function Consulting() {
         </section>
         
         <section>
-          <h2 className="text-2xl font-semibold mb-4">Engagement Style</h2>
+          <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">Engagement Style</h2>
           <p className="mb-4">
             I work in several formats depending on your needs:
           </p>

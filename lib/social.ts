@@ -8,23 +8,12 @@ export interface SocialLink {
 export const socialLinks: SocialLink[] = [
   {
     name: 'github',
-    url: 'https://github.com/yourusername',
+    url: 'https://github.com/FibrinLab',
     label: 'GitHub',
   },
   {
-    name: 'twitter',
-    url: 'https://twitter.com/yourusername',
-    label: 'Twitter',
-  },
-  {
     name: 'linkedin',
-    url: 'https://linkedin.com/in/yourusername',
+    url: 'https://www.linkedin.com/in/akanimoh-osutuk-a59694370/',
     label: 'LinkedIn',
   },
-  // Add more as needed:
-  // {
-  //   name: 'email',
-  //   url: 'mailto:your@email.com',
-  //   label: 'Email',
-  // },
 ];

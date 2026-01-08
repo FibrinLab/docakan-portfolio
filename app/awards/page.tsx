@@ -4,8 +4,8 @@ export default function Awards() {
   const awards = getAwards();
 
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-semibold mb-12">Awards & Recognition</h1>
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
+      <h1 className="text-3xl sm:text-4xl font-semibold mb-8 sm:mb-12">Awards & Recognition</h1>
       
       {awards.length === 0 ? (
         <div className="border-t border-black pt-8">

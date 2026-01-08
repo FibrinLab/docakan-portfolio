@@ -5,22 +5,22 @@ import SocialLinks from "@/components/SocialLinks";
 
 export default function Home() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16">
-      <div className="mb-4">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
+      <div className="mb-4 sm:mb-6">
         <Image
           src="/logo_akan.jpg"
           alt="doc akan"
           width={300}
           height={100}
-          className="h-16 md:h-20 w-auto"
+          className="h-12 sm:h-16 md:h-20 w-auto"
           priority
         />
       </div>
-      <p className="text-xl font-mono mb-8 text-black/70">
+      <p className="text-lg sm:text-xl font-mono mb-6 sm:mb-8 text-black/70">
         akanimoh osutuk — Paediatric Resident
       </p>
       
-      <div className="space-y-6 text-lg leading-relaxed max-w-2xl">
+      <div className="space-y-4 sm:space-y-6 text-base sm:text-lg leading-relaxed max-w-2xl">
         <p>
           I work at the intersection of clinical medicine and technology, with a 
           focus on building and advising on systems used in real healthcare settings.

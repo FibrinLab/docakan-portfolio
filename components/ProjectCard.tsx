@@ -34,7 +34,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             </span>
             <div className="flex-1">
               <div className="flex items-baseline gap-2 flex-wrap">
-                <h3 className="text-xl font-semibold">{project.title}</h3>
+                <h3 className="text-lg sm:text-xl font-semibold">{project.title}</h3>
                 <span className="text-xs font-mono text-black/60">
                   {displayLabel}
                 </span>
@@ -44,13 +44,13 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
                   </span>
                 )}
               </div>
-              <p className="text-base leading-relaxed mt-2 text-black/80">
+              <p className="text-sm sm:text-base leading-relaxed mt-2 text-black/80">
                 {project.description}
               </p>
             </div>
           </div>
           
-          <div className="ml-8 mt-3 flex flex-wrap gap-2">
+          <div className="ml-0 sm:ml-8 mt-3 flex flex-wrap gap-2">
             {project.tech.map((tech, i) => (
               <span
                 key={i}
