@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-black;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white text-black font-mono antialiased;
+    font-family: 'IBM Plex Mono', 'JetBrains Mono', 'Courier Prime', monospace;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-mono font-semibold;
+  }
+  
+  a {
+    @apply underline decoration-1 underline-offset-2 hover:no-underline transition-all;
+  }
+}
+
+@keyframes gridMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(40px, 40px);
+  }
+}
+
+@keyframes typeFade {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(0) scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-10px) scale(1);
+  }
+}
+
+@keyframes shootStar {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(300px, 300px);
+  }
+}
