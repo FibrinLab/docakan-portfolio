@@ -2,20 +2,16 @@ import { notFound } from "next/navigation";
 import { getBlogPost, getBlogPosts } from "@/lib/blog";
 import ReactMarkdown from "react-markdown";
 
-export async function generateStaticParams() {
-  const posts = getBlogPosts();
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
-}
+export const dynamic = "force-dynamic";
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
-  const post = getBlogPost(params.slug);
-  
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = await getBlogPost(slug);
+
   if (!post) {
     notFound();
   }
-  
+
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
       <article>
@@ -28,7 +24,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
             )}
           </div>
         </header>
-        
+
         <div className="text-base sm:text-lg leading-relaxed space-y-4 sm:space-y-6 prose prose-lg max-w-none">
           <ReactMarkdown
             components={{

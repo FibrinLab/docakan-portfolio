@@ -29,7 +29,7 @@ export default function MarkdownEditor({ value, onChange, placeholder }: Markdow
         body: formData,
       });
 
-      const data = await response.json();
+      const data = (await response.json()) as any;
       if (data.success) {
         // Insert image markdown at cursor position
         const imageMarkdown = `![${file.name}](${data.url})\n\n`;

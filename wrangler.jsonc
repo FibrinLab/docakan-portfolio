@@ -1,9 +1,16 @@
 {
+  "name": "docakan-portfolio",
   "main": ".open-next/worker.js",
   "compatibility_date": "2025-04-01",
   "compatibility_flags": ["nodejs_compat"],
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
-  },"name": "docakan-portfolio"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "BLOG_KV",
+      "id": "PLACEHOLDER_KV_ID"
+    }
+  ]
 }

@@ -1,13 +1,15 @@
 import Link from "next/link";
 import { getBlogPosts } from "@/lib/blog";
 
-export default function Blog() {
-  const posts = getBlogPosts();
-  
+export const dynamic = "force-dynamic";
+
+export default async function Blog() {
+  const posts = await getBlogPosts();
+
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
       <h1 className="text-3xl sm:text-4xl font-semibold mb-8 sm:mb-12">Blog</h1>
-      
+
       <div className="space-y-6 sm:space-y-8 max-w-2xl">
         {posts.map((post) => (
           <article key={post.slug} className="border-b border-black pb-6 sm:pb-8 last:border-0">

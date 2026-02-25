@@ -17,7 +17,7 @@ export default function GitHubHeatmap() {
   useEffect(() => {
     fetch('/api/github/contributions')
       .then((res) => res.json())
-      .then((data) => {
+      .then((data: any) => {
         if (data.error) {
           setError(data.error);
         } else if (data.contributions && data.contributions.length > 0) {

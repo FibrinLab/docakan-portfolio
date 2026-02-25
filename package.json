@@ -23,6 +23,7 @@
     "react-syntax-highlighter": "^15.6.6"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260304.0",
     "@opennextjs/cloudflare": "^1.17.1",
     "@types/node": "^20",
     "@types/react": "^18",
